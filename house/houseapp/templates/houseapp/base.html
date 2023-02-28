@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <title>{% block title%} {%endblock title%}</title>
+     {% comment %} <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/animate.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}" > {% endcomment %}
+     <link rel="stylesheet" href="{% static 'reset.css' %}" />
+     <link rel="stylesheet" href="{% static 'style.css' %}" />
+     <!-- MAIN CSS -->
+     <style>
+          {% comment %} body {
+            {% comment %} background-image: url("https://www.edmontonrealestate.pro/uploads/home-evaluation.69.jpg"); {% endcomment %}
+            {% comment %} background-image: url("data:image/jpeg;base64,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"); {% endcomment %}
+               {% comment %} background-image: url("https://media.istockphoto.com/id/1287246629/fr/photo/immobilier-acheter-concept-de-maison.jpg?s=612x612&w=0&k=20&c=6jUGXE9wbAF377H7cZSUh3Ap1zEMmT2cpl_VPJp1kJM=");
+
+            background-size: cover;
+            background-repeat: no-repeat; 
+          } {% endcomment %}
+        </style>
+     {% block head %}{%endblock%}
+</head>
+
+<body>  
+
+     <nav>
+          <ul>
+          <li><a href="{% url 'index' %}">Homepage</a></li>
+          <li><a href="{% url 'index' %}">Contact us</a></li>
+          <li><a href="{% url 'index' %}">Join our team</a></li>
+          </ul>
+     </nav> 
+
+     <!-- HOME -->
+     {% block content%}
+     {% endblock %}
+
+     <!-- FOOTER -->
+     <footer class="py-3 my-4">
+          {% comment %} <p class="float-end"><a href="#" class="nav-link px-2 link-dark" target="_self">Back to top</a></p> {% endcomment %}
+          <p> &copy; All rights reserved, 2023</p>
+     </footer>
+
+</body>
+</html>
+
+

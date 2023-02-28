@@ -1,0 +1,266 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px; /* adjust the value as needed */
+    margin-left: 0px;
+  }
+
+body > * {
+    max-width: 1100px;
+    width: 95%;
+}
+
+/* header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  /* justify-content: center; 
+} */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header figure {
+  width: 500px;
+}
+
+
+/* form {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: left;
+} */
+
+ /* Nav bar */
+
+/* nav {
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+/* nav figure {
+    width: 80px; 
+   
+} */
+
+/* nav ul {
+    display: flex;
+    justify-content:center;    
+    gap: 20px; 
+    list-style: none; 
+    font-weight: bold;
+}
+
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* figure {
+    width: 100%;
+    object-fit: cover;
+} */
+
+/* nav ul li a {
+    color: #999;
+    font-size: large;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(241, 101, 218);
+    transition: color 0.3s; 
+} 
+*/
+
+/* ----------------------------------- */
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 30px;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(241, 101, 218); 
+  }*/
+ /* ----------------------------------------- */
+ .navbar {
+  padding-bottom: 100px; /* adjust the value as needed */
+}
+ 
+ nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(15, 171, 192); 
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+nav ul li a:hover {
+  color: rgb(241, 101, 218); }
+
+
+/*header {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    gap: 50px;
+ } */
+ 
+  
+.right-section {
+    /* float: right;  */
+    margin-left: 400px;
+}
+
+/* header figure {
+    width: 500px;
+} */
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  
+  th, td {
+    border: 1px solid black;
+  }
+
+h1 {
+    color: rgb(241, 101, 218);
+    font-size: 2em;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    padding: 20px;
+}
+
+h2 {
+    color: rgb(15, 171, 192);
+    font-size: 1.5em;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    padding: 20px;
+}
+
+p {
+    padding: 10px; 
+}
+
+footer {
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a:hover {
+    color: rgb(241, 101, 218);
+    transition: color 0.3s;
+    font-size: large;
+    align-content: space-between;
+    justify-content: center;
+    border: bottom;
+}
+
+footer ul {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.button {
+    display: block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+  form {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
