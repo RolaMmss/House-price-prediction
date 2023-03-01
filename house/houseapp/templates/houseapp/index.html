@@ -4,9 +4,15 @@
 {% block content%}
     <header>
         <section>
+            
             <h1>Predict the price of your house !</h1>
             <h2>Enter the following details:</h2>
-            <form action="predictPrice" method="POST">
+            <form action = "{% url 'prediction'%}" method = "post">
+                {% csrf_token %}
+                {{form.as_p }}
+                <input type="submit" value=Submit">
+            </form>
+            {% comment %} <form action="predictPrice" method="POST">
             <label for="zipcode">Zipcode:</label>
             <input type="number" id="zipcode" name="zipcode" min="0" required><br><br>
 
@@ -95,23 +101,18 @@
                 <label for="sqft_basement">Interior housing space below ground level (sqft):</label>
                 <input type="number" id="sqft_basement" name="sqft_basement" min="0" required><br><br>
             <button type="submit">Submit Prediction</button>
-            </form>
+            </form> {% endcomment %}
         </section>
         <figure>
             <img src="https://media.istockphoto.com/id/1287246629/fr/photo/immobilier-acheter-concept-de-maison.jpg?s=612x612&w=0&k=20&c=6jUGXE9wbAF377H7cZSUh3Ap1zEMmT2cpl_VPJp1kJM=" alt="photo dentist">
         </figure>
     </header>  
-    <section>
+        <h2>The predicted price is : {{prediction}}</h2>
+    {% comment %} <section>
         {% autoescape off %}
         {{ map_html|safe }}
         {% endautoescape %}
-    </section>
-
-
-        
-    
-    
-    
+    </section> {% endcomment %}
 
   {% endblock %}
 

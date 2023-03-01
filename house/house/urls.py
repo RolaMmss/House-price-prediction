@@ -22,7 +22,10 @@ from houseapp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='Home'),
-    path('predictPrice/',predictPrice,name='predictPrice'),
-    path('', map_view, name='index'),
+    path('predictPrice/',predictPrice,name='predictPrice'),    
+    path('prediction/',prediction,name='prediction'),
+
+    
+    # path('', map_view, name='index'),
     
 ]
